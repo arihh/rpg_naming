@@ -21,8 +21,8 @@ Or install it yourself as:
 ## Usage
 
 ```
-RpgNaming.monster
-#=> "ワーウルフ"
+RpgNaming.player
+=> "サスケ"
 ```
 
 ## Contributing
