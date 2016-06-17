@@ -1,6 +1,7 @@
 # RpgNaming
 
 RPGに出てきそうな名前をランダムで返してくれるツールです。
+取得する単語の長さを指定できるので、ゲームのサンプルデータ作成などで使う想定。
 
 ## Installation
 
@@ -21,8 +22,29 @@ Or install it yourself as:
 ## Usage
 
 ```
+# モンスター名
+RpgNaming.monster
+=> "オーク"
+
+# プレイヤー名
 RpgNaming.player
 => "サスケ"
+
+# 男性名
+RpgNaming.male
+=> "ユウ"
+
+# 女性名
+RpgNaming.female
+=> "ルキア"
+
+# 男性 or 女性名
+RpgNaming.member
+=> "サツキ"
+
+# 5文字以上8文字以下の名前取得
+RpgNaming.range(5, 8).monster
+=> "ガーゴイル"
 ```
 
 ## Contributing
