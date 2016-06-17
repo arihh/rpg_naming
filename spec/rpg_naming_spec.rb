@@ -9,7 +9,7 @@ describe RpgNaming do
       "females" => ["サツキ"],
     }
   }
-  before { RpgNaming.stub(:names).and_return(names) }
+  before { allow(RpgNaming).to receive(:names).and_return(names) }
   subject { RpgNaming }
   it 'player' do
     expect(subject.player).to eq("ゆりしー")

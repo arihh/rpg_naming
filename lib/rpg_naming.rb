@@ -3,7 +3,7 @@ require "yaml"
 
 module RpgNaming
   class Base
-    def initialize(min = 0, max = nil)
+    def initialize(min = 2, max = nil)
       @min, @max = min, max
     end
 
@@ -29,7 +29,7 @@ module RpgNaming
     end
   end
 
-  def self.range(min = 0, max = nil)
+  def self.range(min = 1, max = nil)
     Base.new(min, max)
   end
 
